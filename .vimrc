@@ -20,6 +20,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " syntax completion
 Bundle 'Valloric/YouCompleteMe'
+
 " syntax checking
 Bundle 'scrooloose/syntastic'
 let g:syntastic_check_on_open = 1
@@ -34,7 +35,7 @@ let NERDTreeIgnore = ['\.pyc$']
 Plugin 'vim-scripts/django.vim'
 "setfiletype htmldjango
 
-Plugin 'surround.vim'
+"Plugin 'surround.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -55,7 +56,7 @@ filetype plugin indent on    " required
 
 
 " Automatic reloading of .vimrc
-autocmd! bufwritepost .vimrc source %
+"autocmd! bufwritepost .vimrc source %
 
 
 "---Syntax highlighting---
@@ -74,14 +75,13 @@ autocmd! bufwritepost .vimrc source %
 "}
 " Rebind <Leader> key
 "{
-    " let mapleader=","
-
+    let mapleader=","
 "}
 
 "---Text formating---
 "{
     "ts = tabstop, sts = softtabstop, sw = shiftwidth
-    "et = expandtab, ai = autoindent
+    "et = expandtab, ai = autoindent, tw = textwidth
 	set ts=4 sts=4 sw=4 et 
     set tw=79
     set autoindent
@@ -100,13 +100,13 @@ autocmd! bufwritepost .vimrc source %
     set smartcase
 
     " Better copy & paste
-    set paste
+    "set paste
     set pastetoggle=<F3>
     set clipboard=unnamed
 
     " Easier moving of blocks
-    vnoremap < <gv " better indentation
-    vnoremap > >gv " better indentation
+    vnoremap < <gv 
+    vnoremap > >gv 
 
 "}
 
@@ -119,10 +119,16 @@ autocmd! bufwritepost .vimrc source %
     nnoremap N Nzz
     nnoremap <C-d> <C-d>zz
     nnoremap <C-u> <C-u>zz
+    nnoremap <C-o> <C-o>zz
+    nnoremap <C-i> <C-i>zz
+    nnoremap <Tab> <Tab>zz
+
 
     nnoremap <F2> :NERDTreeToggle<CR>
     "nmap <F5> :grep <C-r><C-w> *<CR>
-    "inoremap jk <Esc>
+
+    " Insert Mode
+    inoremap jk <Esc>
 "}
 
 
