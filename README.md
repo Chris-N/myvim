@@ -4,15 +4,15 @@ myvim
 My personal settings for .vimrc
 
 *First: get vim plugin vundle (package manager)
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+<p>git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim</p>
 
-***might need to mkdir -p ~/.vim/bundle***
+*might need to mkdir -p ~/.vim/bundle*
 
 Second: move .vimrc configuration file
-mv ~/myvim/.vimrc ~/.vimrc
+<p>mv ~/myvim/.vimrc ~/.vimrc</p>
 
 Third: install plugins from .vimrc
-vim (run :PluginInstall)
+<p>vim (run :PluginInstall)</p>
 
 Reference:
--https://github.com/gmarik/Vundle.vim
+https://github.com/gmarik/Vundle.vim
