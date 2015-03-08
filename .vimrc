@@ -92,11 +92,11 @@ filetype plugin indent on    " required
 
 "---Basic UI tools---
 "{
-	set number
+    set number
     set cursorline
 
     " Search insensitive
-	set hlsearch
+    set hlsearch
     set incsearch
     set ignorecase
     set smartcase
