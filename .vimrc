@@ -18,24 +18,26 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
+
 " syntax completion
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 " syntax checking
-Bundle 'scrooloose/syntastic'
-let g:syntastic_check_on_open = 1
-let g:syntastic_enable_signs = 1
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_html_checkers = ['tidy']
-let g:syntastic_enable_prolog_checkers = 0
+" Bundle 'scrooloose/syntastic'
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_enable_signs = 1
+" let g:syntastic_javascript_checkers = ['jshint']
+" let g:syntastic_html_checkers = ['tidy']
+" let g:syntastic_enable_prolog_checkers = 0
 
 Bundle 'scrooloose/nerdtree'
 let NERDTreeIgnore = ['\.pyc$']
 
-Plugin 'vim-scripts/django.vim'
+"Plugin 'vim-scripts/django.vim'
 "setfiletype htmldjango
 
-"Plugin 'surround.vim'
+Plugin 'surround.vim'
+Plugin 'snipMate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,10 +84,10 @@ filetype plugin indent on    " required
 "{
     "ts = tabstop, sts = softtabstop, sw = shiftwidth
     "et = expandtab, ai = autoindent, tw = textwidth
-	set ts=4 sts=4 sw=4 et 
-    set tw=79
-    set autoindent
-    set ttyfast
+	set ts=3 sts=3 sw=3 et 
+   set tw=79
+   set autoindent
+   set ttyfast
 "}
 
 "---Basic UI tools---
