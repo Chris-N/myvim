@@ -67,6 +67,7 @@ filetype plugin indent on    " required
 
 	"This changes the comment color!
 	highlight Comment ctermfg=darkgrey
+    highlight SpecialKey ctermfg=lightcyan
 	"highlight String ctermfg=black ctermbg=white
 	"highlight Float ctermfg=yellow
 	"highlight SpecialChar ctermfg=red
