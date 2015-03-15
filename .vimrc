@@ -169,7 +169,7 @@ filetype plugin indent on    " required
 	filetype plugin on
 	filetype indent on
 	"Django.vim
-	au BufNewFile,BufRead *.html set filetype=htmldjango
+	"au BufNewFile,BufRead *.html set filetype=htmldjango
 "}
 "---Cursor Customization---
 "{
